@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Bonhomme Pendu</title>
+</head>
+<body>
+	<h1>Bonhomme Pendu</h1>
+	<p>Trouve le mot caché- Entre une lettre à la fois</p>
+	<div class="jeu-content">
+		<svg height="250" width="200" class="figure-content">
+			<line x1="60" y1="20" x2="140" y2="20" />
+			<line x1="140" y1="20" x2="140" y2="50" />
+			<line x1="60" y1="20" x2="60" y2="230" />
+			<line x1="20" y1="230" x2="100" y2="230" />
+			<circle cx="140" cy="70" r="20" class="figure-partie" />
+
+			<line x1="140" y1="90" x2="140" y2="150" class="figure-partie" />
+
+			<line x1="140" y1="100" x2="120" y2="120" class="figure-partie" />
+			<line x1="140" y1="100" x2="160" y2="120" class="figure-partie" />
+
+			<line x1="140" y1="150" x2="120" y2="180" class="figure-partie" />
+			<line x1="140" y1="150" x2="160" y2="180" class="figure-partie" />
+		</svg>
+		<div class="mauvaises-lettres-contenant">
+			<p>Mauvaises Lettres</p>
+			<div id="mauvaises-lettres"></div>	
+		</div>
+		<div class="mot" id="mot"><span class="lettre"></span></div>
+	</div>
+	<div class="popup-contenant" id="popup-contenant">
+		<div class="popup">
+			<h2 id="message-final"> Bravo, Vous avez gagné !!</h2>
+			<input type="button" value="rejouer" id="input" />
+	</div>
+	<div class="notification-contenant" id="notification-contenant">
+		<p>Vous avez déjà essayé cette lettre !</p>
+	</div>
+	
+	<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
